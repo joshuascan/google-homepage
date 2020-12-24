@@ -3,59 +3,171 @@ body {
     font-size: small;
 }
 
-#logo {
-    display: block;
-    margin: auto;
-    padding: 160px 0 0 0;
-}
-
-#search-bar {
-    display: block;
-    margin: auto;
-    position: relative;
-    top: 30px;
-    width: 575px;
-    height: 40px;
-    border-radius: 25px;
-    outline: none;
-}
-
-.search-buttons {
-    display: inline-flex;
-    justify-content: center;
-    top: 60px;
-    border: none;
-    outline: none;
-    opacity: 0.75;
-    padding: 10px;
-    margin: 5px;
-    font-size: 1.1em;
-}
-
-.search-buttons:hover {
-    box-shadow: 0 0px 3px rgba(0,0,0,1);
-}
-
 ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li {
-    float: left;
-}
-
-li a {
-    display: block;
+.nav-text a {
+    display: inline-block;
+    vertical-align: middle;
     color: #000;
     text-align: center;
-    padding: 15px 0px 0px 18px;
+    padding: 15px 0px 15px 18px;
     text-decoration: none;
     opacity: 0.75;
 }
 
 li a:hover {
     text-decoration: underline;
+}
+
+.top-left {
+    position: absolute;
+    left: 7px;
+}
+
+.top-right {
+    position: absolute;
+    right: 20px;
+}
+
+.bottom-left {
+    position: absolute;
+    padding-left: 0px;
+    left: 3px;
+    bottom: 0px;
+}
+
+.bottom-right {
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+.footer {
+    display: relative;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    left: 0px;
+    bottom: 0px;
+}
+
+.footer-text a {
+    display: inline-block;
+    vertical-align: middle;
+    color: #5f6368;
+    text-align: center;
+    padding: 0px 0px 12px 27px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.search-buttons {
+    border: none;
+    outline: none;
+    opacity: 0.75;
+    padding: 10px 18px;
+    margin: 30px 5px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.search-buttons:hover {
+    box-shadow: 0 0px 3px rgba(0,0,0,1);
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    height: 30px;
+    width: 30px;
+}
+
+#google-apps {
+    display: inline-block;
+    padding: 0px 10px 0px 10px;
+    margin: 12px 15px;
+    height: 23px;
+    width: 0px;
+    background-image: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+    background-position: -135px -42px;
+    opacity: 0.55;
+}
+
+#google-apps:hover {
+    opacity: 1;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 190px 0 27px 0;
+}
+
+#search-bar {
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    width: 491px;
+    height: 20px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(224, 224, 224);
+    padding: 12px 45px;
+    outline-style: none;
+}
+
+#search-bar:hover {
+    box-shadow: 0px 1px 5px rgba(170, 170, 170, .75);
+}
+
+#magnifying-glass {
+    position: absolute;
+    padding: 0px 10px 0px 10px;
+    height: 30px;
+    width: 5px;
+    right: 265px;
+    bottom: 126px;
+    background-image: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+    background-position: -250px -38px;
+    opacity: 0.35;
+}
+
+#microphone {
+    position: absolute;
+    left: 265px;
+    bottom: 136px;
+    height: 25px;
+    width: 25px;
+}
+
+#microphone:hover {
+    cursor: pointer;
+}
+
+#sign-in {
+    display: inline-block;
+    border: none;
+    outline: none;
+    background-color: #4285f4;
+    font-weight: bold;
+    color: white;
+    padding: 7px 13px 8px 13px;
+    margin: 8px;
+    cursor: pointer;
 }
